@@ -1,0 +1,1178 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SaucyDungeonofDeath",
+				"abbreviation": "SDoD",
+				"full": "Saucy Dungeon of Death",
+				"url": "",
+				"authors": [
+					"Nathan Morton"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Peg Leg Pete",
+			"isNamedCreature": true,
+			"source": "SaucyDungeonofDeath",
+			"page": 1,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "16d10 + 112"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 27,
+			"dex": 15,
+			"con": 25,
+			"int": 22,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"dex": "+8",
+				"con": "+13",
+				"wis": "+8",
+				"int": "+12"
+			},
+			"skill": {
+				"intimidation": "+8",
+				"perception": "+8",
+				"history": "+12",
+				"arcana": "+12",
+				"stealth": "+8",
+				"deception": "+8",
+				"athletics": "+14",
+				"insight": "+8"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Infernal Despair",
+					"entries": [
+						"Each creature within 30 feet of Hutijin that isn't a devil makes saving throws with disadvantage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Hutijin fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Hutijin has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Hutijin regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Hutijin dies only if he starts his turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Hutijin makes one Bite attack, two Weapon attacks, and one Tail attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) fire damage. The target must succeed on a {@dc 19} Constitution saving throw or become {@condition poisoned}. While {@condition poisoned} in this way, the target can't regain hit points, and it takes 10 ({@damage 3d6}) poison damage at the start of each of its turns. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Claw (Weapon Attack)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d8 + 8}) cold damage."
+					]
+				},
+				{
+					"name": "Mace (Weapon Attack)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) force damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 8}) thunder damage."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"Hutijin teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fearful Voice {@recharge 5}",
+					"entries": [
+						"In response to taking damage, Hutijin utters a dreadful word of power. Each creature within 30 feet of him that isn't a devil must succeed on a {@dc 19} Wisdom saving throw or become {@condition frightened} of him for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that saves against this effect is immune to his Fearful Voice for 24 hours."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Hutijin makes one Claw, Mace, or Tail attack."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"Hutijin uses Teleport."
+					]
+				},
+				{
+					"name": "Lightning Storm (Costs 2 Actions)",
+					"entries": [
+						"Hutijin releases lightning in a 30-foot radius, blocked only by total cover. All other creatures in that area must each make a {@dc 22} Dexterity saving throw, taking 18 ({@damage 4d8}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hutijin.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"XX",
+				"TP"
+			],
+			"damageTags": [
+				"C",
+				"F",
+				"I",
+				"L",
+				"O",
+				"T"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"R",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"poisoned"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MPMM/Hutijin.png",
+			"fluff": {
+				"name": "Hutijin",
+				"source": "MPMM",
+				"entries": [
+					"Politics in the Nine Hells are anything but predictable. Alliances form all the time, but most wind up unraveling due to treachery. Nevertheless, for all their backbiting and betrayal, devils do occasionally display loyalty, offering unwavering service to their masters. One such example is Hutijin, a duke of Cania and loyal servant of Mephistopheles.",
+					"Across the Hells, Hutijin's name fills lesser devils with fear and loathing, for this duke commands two companies of {@creature pit fiend|MM|pit fiends}. With such soldiers under his command, Hutijin can easily crush any rival who gets in his way while also defending Mephistopheles against armies seeking to contest his dominion. Hutijin has amassed enough power to challenge the lord of Cania, but he has never wavered in his support for his master—suggesting, perhaps, that Mephistopheles has some hold over him.",
+					"Outside the Nine Hells, Hutijin is a relatively obscure figure, known only to the most learned infernal scholars. He has no cults of his own, and his servants are few in number. The reason is simple: Hutijin hates mortals. When summoned from the Hells, he repays the instigator with a long and agonizing death.",
+					"Mephistopheles forbids Hutijin from making too many forays into the Material Plane, since the duke's absence leaves him vulnerable to his rivals. Other archdevils know how much Hutijin despises mortals and have secretly disseminated the means to call him from the Nine Hells in the hope of distracting the archdevil long enough for them to assail Mephistopheles. Hutijin sends devils into the Material Plane to eradicate mention of his name and destroy those who have learned of him, but the summonings still occur. When called from his post, he negotiates as quickly as he can, usually closing a deal with little cost to the summoner. However, once the deal has been fulfilled, Hutijin repays the interruption with death."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Hutijin.webp"
+						}
+					}
+				]
+			},
+			"bonus": [
+				{
+					"name": "Telekinetic Shove",
+					"entries": [
+						"Hutijin can try to telekinetically shove one creature he can see within 30 feet of him. When he does so, the target must succeed on a Strength saving throw {@dc 19} or be moved 5 feet toward him or away from him. A creature can willingly fail this save."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Hutijin casts one of the following spells, requiring no material components (if at will) and using Intelligence as the spellcasting ability (spell save {@dc 19}, {@hit 11} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell alter self} (can become Medium when changing his appearance)",
+						"{@spell detect magic}",
+						"{@spell hold monster}",
+						"{@spell invisibility} (self only)",
+						"{@spell lightning bolt}",
+						"{@spell suggestion}",
+						"{@spell wall of fire}"
+					],
+					"daily": {
+						"1": [
+							"{@spell simulacrum} {@recharge 6}"
+						],
+						"3": [
+							"{@spell dispel magic}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand} (60 ft range, no verbal or somatic components, invisible hand)",
+								"{@spell mind sliver|TCE}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell silent image}",
+								"{@spell silvery barbs|SCC}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell pass without trace}",
+								"{@spell web}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell sickening radiance|XGE}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell wall of force}",
+								"{@spell wall of light|XGE}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell contingency}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell etherealness}",
+								"{@spell forcecage}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell demiplane}",
+								"{@spell maddening darkness|XGE}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell blade of disaster|TCE}",
+								"{@spell imprisonment}",
+								"{@spell meteor swarm}",
+								"{@spell prismatic wall}",
+								"{@spell true polymorph}",
+								"{@spell wish}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			]
+		},
+		{
+			"name": "Peg Leg Pete 1",
+			"isNamedCreature": true,
+			"source": "SaucyDungeonofDeath",
+			"page": 1,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil",
+					"wizard"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "16d10 + 112"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 27,
+			"dex": 15,
+			"con": 25,
+			"int": 22,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"dex": "+9",
+				"con": "+14",
+				"wis": "+10",
+				"int": "+13"
+			},
+			"skill": {
+				"intimidation": "+9",
+				"perception": "+10",
+				"history": "+13",
+				"arcana": "+13",
+				"stealth": "+9",
+				"deception": "+9",
+				"athletics": "+15",
+				"insight": "+10"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				{
+					"special": "magical sleep"
+				}
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Infernal Despair",
+					"entries": [
+						"Each creature within 30 feet of Hutijin that isn't a devil makes saving throws with disadvantage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Hutijin fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Hutijin has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Hutijin regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Hutijin dies only if he starts his turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Hutijin makes one Bite attack, two Weapon attacks, and one Tail attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) fire damage. The target must succeed on a {@dc 21} Constitution saving throw or become {@condition poisoned}. While {@condition poisoned} in this way, the target can't regain hit points, and it takes 10 ({@damage 3d6}) poison damage at the start of each of its turns. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Claw (Weapon Attack)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d8 + 8}) cold damage."
+					]
+				},
+				{
+					"name": "Mace (Weapon Attack)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) force damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 8}) thunder damage."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"Hutijin teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fearful Voice {@recharge 5}",
+					"entries": [
+						"In response to taking damage, Hutijin utters a dreadful word of power. Each creature within 30 feet of him that isn't a devil must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} of him for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that saves against this effect is immune to his Fearful Voice for 24 hours."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Hutijin makes one Claw, Mace, or Tail attack."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"Hutijin uses Teleport."
+					]
+				},
+				{
+					"name": "Lightning Storm (Costs 2 Actions)",
+					"entries": [
+						"Hutijin releases lightning in a 30-foot radius, blocked only by total cover. All other creatures in that area must each make a {@dc 21} Dexterity saving throw, taking 18 ({@damage 4d8}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hutijin.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"XX",
+				"TP"
+			],
+			"damageTags": [
+				"C",
+				"F",
+				"I",
+				"L",
+				"O",
+				"T"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"R",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"poisoned"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MPMM/Hutijin.png",
+			"fluff": {
+				"name": "Hutijin",
+				"source": "MPMM",
+				"entries": [
+					"Politics in the Nine Hells are anything but predictable. Alliances form all the time, but most wind up unraveling due to treachery. Nevertheless, for all their backbiting and betrayal, devils do occasionally display loyalty, offering unwavering service to their masters. One such example is Hutijin, a duke of Cania and loyal servant of Mephistopheles.",
+					"Across the Hells, Hutijin's name fills lesser devils with fear and loathing, for this duke commands two companies of {@creature pit fiend|MM|pit fiends}. With such soldiers under his command, Hutijin can easily crush any rival who gets in his way while also defending Mephistopheles against armies seeking to contest his dominion. Hutijin has amassed enough power to challenge the lord of Cania, but he has never wavered in his support for his master—suggesting, perhaps, that Mephistopheles has some hold over him.",
+					"Outside the Nine Hells, Hutijin is a relatively obscure figure, known only to the most learned infernal scholars. He has no cults of his own, and his servants are few in number. The reason is simple: Hutijin hates mortals. When summoned from the Hells, he repays the instigator with a long and agonizing death.",
+					"Mephistopheles forbids Hutijin from making too many forays into the Material Plane, since the duke's absence leaves him vulnerable to his rivals. Other archdevils know how much Hutijin despises mortals and have secretly disseminated the means to call him from the Nine Hells in the hope of distracting the archdevil long enough for them to assail Mephistopheles. Hutijin sends devils into the Material Plane to eradicate mention of his name and destroy those who have learned of him, but the summonings still occur. When called from his post, he negotiates as quickly as he can, usually closing a deal with little cost to the summoner. However, once the deal has been fulfilled, Hutijin repays the interruption with death."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Hutijin.webp"
+						}
+					}
+				]
+			},
+			"bonus": [
+				{
+					"name": "Telekinetic Shove",
+					"entries": [
+						"Hutijin can try to telekinetically shove one creature he can see within 30 feet of him. When he does so, the target must succeed on a Strength saving throw {@dc 21} or be moved 5 feet toward him or away from him. A creature can willingly fail this save."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Hutijin casts one of the following spells, requiring no material components (if at will) and using Intelligence as the spellcasting ability (spell save {@dc 21}, {@hit 13} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell alter self} (can become Medium when changing his appearance)",
+						"{@spell detect magic}",
+						"{@spell hold monster}",
+						"{@spell invisibility} (self only)",
+						"{@spell lightning bolt}",
+						"{@spell suggestion}",
+						"{@spell wall of fire}"
+					],
+					"daily": {
+						"1": [
+							"{@spell simulacrum} {@recharge 6}"
+						],
+						"3": [
+							"{@spell dispel magic}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand} (60 ft range, no verbal or somatic components, invisible hand)",
+								"{@spell mind sliver|TCE}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell silent image}",
+								"{@spell silvery barbs|SCC}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell pass without trace}",
+								"{@spell web}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell sickening radiance|XGE}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell wall of force}",
+								"{@spell wall of light|XGE}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell contingency}",
+								"{@spell disintegrate}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell etherealness}",
+								"{@spell forcecage}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell demiplane}",
+								"{@spell maddening darkness|XGE}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell blade of disaster|TCE}",
+								"{@spell imprisonment}",
+								"{@spell meteor swarm}",
+								"{@spell prismatic wall}",
+								"{@spell true polymorph}",
+								"{@spell wish}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			]
+		},
+		{
+			"name": "Peg Leg Pete 2",
+			"isNamedCreature": true,
+			"source": "SaucyDungeonofDeath",
+			"page": 1,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil",
+					"wizard"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 24,
+					"from": [
+						"natural armor",
+						"{@item +3 shield}"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "16d10 + 112"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 27,
+			"dex": 15,
+			"con": 25,
+			"int": 22,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"dex": "+9",
+				"con": "+14",
+				"wis": "+10",
+				"int": "+13"
+			},
+			"skill": {
+				"intimidation": "+9",
+				"perception": "+10",
+				"history": "+13",
+				"arcana": "+13",
+				"stealth": "+9",
+				"deception": "+9",
+				"athletics": "+15",
+				"insight": "+10"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 25,
+			"resist": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				{
+					"special": "magical sleep"
+				}
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Infernal Despair",
+					"entries": [
+						"Each creature within 30 feet of Hutijin that isn't a devil makes saving throws with disadvantage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Hutijin fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Hutijin has advantage on saving throws against spells and other magical effects. He also has advantage on saving throws against spells cast by creatures within 5 feet of him."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Hutijin regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Hutijin dies only if he starts his turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Infernal Constitution",
+					"entries": [
+						"Hutijin has advantage on Constitution saving throws that he makes to maintain his concentration on a spell when he takes damage."
+					]
+				},
+				{
+					"name": "Mage Slayer",
+					"entries": [
+						"When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Hutijin makes one Bite attack, two Weapon attacks, and one Tail attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) fire damage. The target must succeed on a {@dc 21} Constitution saving throw or become {@condition poisoned}. While {@condition poisoned} in this way, the target can't regain hit points, and it takes 10 ({@damage 3d6}) poison damage at the start of each of its turns. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Claw (Weapon Attack)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d8 + 8}) cold damage."
+					]
+				},
+				{
+					"name": "Mace (Weapon Attack)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 8}) force damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 8}) thunder damage."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"Hutijin teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fearful Voice {@recharge 5}",
+					"entries": [
+						"In response to taking damage, Hutijin utters a dreadful word of power. Each creature within 30 feet of him that isn't a devil must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} of him for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that saves against this effect is immune to his Fearful Voice for 24 hours."
+					]
+				},
+				{
+					"name": "Mage Slayer",
+					"entries": [
+						"When a creature within 5 feet of Hutijin casts a spell, he can use his reaction to make a melee weapon attack against that creature."
+					]
+				},
+				{
+					"name": "Retributive Spell",
+					"entries": [
+						"When a hostile creature's movement provokes an opportunity attack from Hutijin, he can use his reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Hutijin makes one Claw, Mace, or Tail attack."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"Hutijin uses Teleport."
+					]
+				},
+				{
+					"name": "Lightning Storm (Costs 2 Actions)",
+					"entries": [
+						"Hutijin releases lightning in a 30-foot radius, blocked only by total cover. All other creatures in that area must each make a {@dc 21} Dexterity saving throw, taking 18 ({@damage 4d8}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hutijin.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"XX",
+				"TP"
+			],
+			"damageTags": [
+				"C",
+				"F",
+				"I",
+				"L",
+				"O",
+				"T"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"R",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"poisoned"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MPMM/Hutijin.png",
+			"fluff": {
+				"name": "Hutijin",
+				"source": "MPMM",
+				"entries": [
+					"Politics in the Nine Hells are anything but predictable. Alliances form all the time, but most wind up unraveling due to treachery. Nevertheless, for all their backbiting and betrayal, devils do occasionally display loyalty, offering unwavering service to their masters. One such example is Hutijin, a duke of Cania and loyal servant of Mephistopheles.",
+					"Across the Hells, Hutijin's name fills lesser devils with fear and loathing, for this duke commands two companies of {@creature pit fiend|MM|pit fiends}. With such soldiers under his command, Hutijin can easily crush any rival who gets in his way while also defending Mephistopheles against armies seeking to contest his dominion. Hutijin has amassed enough power to challenge the lord of Cania, but he has never wavered in his support for his master—suggesting, perhaps, that Mephistopheles has some hold over him.",
+					"Outside the Nine Hells, Hutijin is a relatively obscure figure, known only to the most learned infernal scholars. He has no cults of his own, and his servants are few in number. The reason is simple: Hutijin hates mortals. When summoned from the Hells, he repays the instigator with a long and agonizing death.",
+					"Mephistopheles forbids Hutijin from making too many forays into the Material Plane, since the duke's absence leaves him vulnerable to his rivals. Other archdevils know how much Hutijin despises mortals and have secretly disseminated the means to call him from the Nine Hells in the hope of distracting the archdevil long enough for them to assail Mephistopheles. Hutijin sends devils into the Material Plane to eradicate mention of his name and destroy those who have learned of him, but the summonings still occur. When called from his post, he negotiates as quickly as he can, usually closing a deal with little cost to the summoner. However, once the deal has been fulfilled, Hutijin repays the interruption with death."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Hutijin.webp"
+						}
+					}
+				]
+			},
+			"bonus": [
+				{
+					"name": "Telekinetic Shove",
+					"entries": [
+						"Hutijin can try to telekinetically shove one creature he can see within 30 feet of him. When he does so, the target must succeed on a Strength saving throw {@dc 21} or be moved 5 feet toward him or away from him. A creature can willingly fail this save."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Hutijin casts one of the following spells, requiring no material components (if at will) and using Intelligence as the spellcasting ability (spell save {@dc 21}, {@hit 13} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell alter self} (can become Medium when changing his appearance)",
+						"{@spell detect magic}",
+						"{@spell hold monster}",
+						"{@spell invisibility} (self only)",
+						"{@spell lightning bolt}",
+						"{@spell suggestion}",
+						"{@spell wall of fire}"
+					],
+					"daily": {
+						"1": [
+							"{@spell simulacrum} {@recharge 6}"
+						],
+						"3": [
+							"{@spell dispel magic}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand} (60 ft range, no verbal or somatic components, invisible hand)",
+								"{@spell mind sliver|TCE}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell silent image}",
+								"{@spell silvery barbs|SCC}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell pass without trace}",
+								"{@spell web}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell sickening radiance|XGE}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell wall of force}",
+								"{@spell wall of light|XGE}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell contingency}",
+								"{@spell disintegrate}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell etherealness}",
+								"{@spell forcecage}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell demiplane}",
+								"{@spell maddening darkness|XGE}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell blade of disaster|TCE}",
+								"{@spell imprisonment}",
+								"{@spell meteor swarm}",
+								"{@spell prismatic wall}",
+								"{@spell true polymorph}",
+								"{@spell wish}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			]
+		}
+	]
+}
